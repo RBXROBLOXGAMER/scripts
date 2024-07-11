@@ -28,21 +28,6 @@ local UICorner_9 = Instance.new("UICorner")
 local UICorner_10 = Instance.new("UICorner")
 local Unc = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Console = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local Top_2 = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_14 = Instance.new("UICorner")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local TextButton = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
-local ScrollingFrame_2 = Instance.new("ScrollingFrame")
-local Write_2 = Instance.new("TextBox")
-local UICorner_16 = Instance.new("UICorner")
-local ImageLabel_4 = Instance.new("ImageLabel")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
 
 --Properties:
 
@@ -196,7 +181,7 @@ Load.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Load.BorderSizePixel = 0
 Load.Position = UDim2.new(0.856804907, 0, 0.737642586, 0)
 Load.Size = UDim2.new(0, 67, 0, 30)
-Load.Font = Enum.Font.FredokaOne
+Load.Font = Enum.Font.Unknown
 Load.Text = "Load"
 Load.TextColor3 = Color3.fromRGB(255, 255, 255)
 Load.TextSize = 17.000
@@ -209,7 +194,7 @@ Load1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Load1.BorderSizePixel = 0
 Load1.Position = UDim2.new(0.860289276, 0, 0.825095177, 0)
 Load1.Size = UDim2.new(0, 62, 0, 29)
-Load1.Font = Enum.Font.FredokaOne
+Load1.Font = Enum.Font.Unknown
 Load1.Text = "Load"
 Load1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Load1.TextSize = 17.000
@@ -275,124 +260,9 @@ Unc.TextWrapped = true
 
 UICorner_11.Parent = Unc
 
-Console.Name = "Console"
-Console.Parent = XAZZZKAP3JDSAZNZW
-Console.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-Console.BackgroundTransparency = 1.000
-Console.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Console.BorderSizePixel = 0
-Console.Position = UDim2.new(0.466383576, 0, 0.418789804, 0)
-Console.Size = UDim2.new(0, 476, 0, 263)
-
-UICorner_12.CornerRadius = UDim.new(0, 10)
-UICorner_12.Parent = Console
-
-Top_2.Name = "Top"
-Top_2.Parent = Console
-Top_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Top_2.BackgroundTransparency = 0.450
-Top_2.BorderColor3 = Color3.fromRGB(94, 94, 94)
-Top_2.BorderSizePixel = 0
-Top_2.Size = UDim2.new(0, 476, 0, 41)
-
-UICorner_13.CornerRadius = UDim.new(0, 10)
-UICorner_13.Parent = Top_2
-
-TextLabel_2.Parent = Top_2
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(1.24055191e-07, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 492, 0, 41)
-TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "Console Log"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 29.000
-TextLabel_2.TextWrapped = true
-
-UICorner_14.CornerRadius = UDim.new(0, 10)
-UICorner_14.Parent = TextLabel_2
-
-UIAspectRatioConstraint_2.Parent = TextLabel_2
-UIAspectRatioConstraint_2.AspectRatio = 12.000
-
-TextButton.Parent = Top_2
-TextButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.859243691, 0, 0.048780486, 0)
-TextButton.Size = UDim2.new(0, 60, 0, 36)
-TextButton.Font = Enum.Font.FredokaOne
-TextButton.Text = "Unload"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 14.000
-
-UICorner_15.CornerRadius = UDim.new(0, 15)
-UICorner_15.Parent = TextButton
-
-ScrollingFrame_2.Parent = Console
-ScrollingFrame_2.Active = true
-ScrollingFrame_2.AnchorPoint = Vector2.new(0.00200000009, 0.00999999978)
-ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-ScrollingFrame_2.BackgroundTransparency = 1.000
-ScrollingFrame_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
-ScrollingFrame_2.BorderSizePixel = 0
-ScrollingFrame_2.Position = UDim2.new(0.00210084044, 0, 0.156000003, 0)
-ScrollingFrame_2.Size = UDim2.new(0, 475, 0, 208)
-ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 4, 0)
-ScrollingFrame_2.ScrollBarThickness = 10
-
-Write_2.Name = "Write"
-Write_2.Parent = ScrollingFrame_2
-Write_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Write_2.BorderColor3 = Color3.fromRGB(65, 65, 65)
-Write_2.BorderSizePixel = 0
-Write_2.Selectable = false
-Write_2.Size = UDim2.new(0, 475, 0, 220)
-Write_2.ZIndex = 0
-Write_2.ClearTextOnFocus = false
-Write_2.Font = Enum.Font.FredokaOne
-Write_2.MultiLine = true
-Write_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-Write_2.Text = ""
-Write_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Write_2.TextSize = 14.000
-Write_2.TextWrapped = true
-Write_2.TextXAlignment = Enum.TextXAlignment.Left
-Write_2.TextYAlignment = Enum.TextYAlignment.Top
-
-UICorner_16.CornerRadius = UDim.new(0, 10)
-UICorner_16.Parent = Write_2
-
-ImageLabel_4.Parent = Console
-ImageLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_4.BackgroundTransparency = 1.000
-ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_4.BorderSizePixel = 0
-ImageLabel_4.Position = UDim2.new(-0.0504206792, 0, -0.0333502591, 0)
-ImageLabel_4.Size = UDim2.new(0, 516, 0, 259)
-ImageLabel_4.ZIndex = -1
-ImageLabel_4.Image = "rbxassetid://1316045217"
-ImageLabel_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
-
-TextButton_2.Parent = Console
-TextButton_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0168067235, 0, 0.00760456268, 0)
-TextButton_2.Size = UDim2.new(0, 71, 0, 32)
-TextButton_2.Font = Enum.Font.FredokaOne
-TextButton_2.Text = "Clear"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 21.000
-TextButton_2.TextWrapped = true
-
-UICorner_17.Parent = TextButton_2
-
 -- Scripts:
 
-local function IAVOW_fake_script() -- Execute.LocalScript 
+local function CORWTNA_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	
@@ -403,8 +273,8 @@ local function IAVOW_fake_script() -- Execute.LocalScript
 		loadstring(code)()
 	end)
 end
-coroutine.wrap(IAVOW_fake_script)()
-local function NJSWES_fake_script() -- Clear.LocalScript 
+coroutine.wrap(CORWTNA_fake_script)()
+local function OYEV_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -413,8 +283,8 @@ local function NJSWES_fake_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(NJSWES_fake_script)()
-local function IQGAJ_fake_script() -- INF.LocalScript 
+coroutine.wrap(OYEV_fake_script)()
+local function QXMUG_fake_script() -- INF.LocalScript 
 	local script = Instance.new('LocalScript', INF)
 
 	local button = script.Parent
@@ -422,8 +292,8 @@ local function IQGAJ_fake_script() -- INF.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(IQGAJ_fake_script)()
-local function BKIBIHA_fake_script() -- Nut.LocalScript 
+coroutine.wrap(QXMUG_fake_script)()
+local function UYEKJPU_fake_script() -- Nut.LocalScript 
 	local script = Instance.new('LocalScript', Nut)
 
 	local button = script.Parent
@@ -431,8 +301,8 @@ local function BKIBIHA_fake_script() -- Nut.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/working/main/pc"))()
 	end)
 end
-coroutine.wrap(BKIBIHA_fake_script)()
-local function RVGTBTY_fake_script() -- Unload.LocalScript 
+coroutine.wrap(UYEKJPU_fake_script)()
+local function VFQOIL_fake_script() -- Unload.LocalScript 
 	local script = Instance.new('LocalScript', Unload)
 
 	local button = script.Parent
@@ -440,8 +310,8 @@ local function RVGTBTY_fake_script() -- Unload.LocalScript
 		script.Parent.Parent.Parent.Frame:Destroy()
 	end)
 end
-coroutine.wrap(RVGTBTY_fake_script)()
-local function JHUR_fake_script() -- Frame.unc 
+coroutine.wrap(VFQOIL_fake_script)()
+local function EFNGEE_fake_script() -- Frame.unc 
 	local script = Instance.new('LocalScript', Frame)
 
 	local passes, fails, undefined = 0, 0, 0
@@ -2246,7 +2116,8 @@ local function JHUR_fake_script() -- Frame.unc
 					end
 				end
 			end
-			loadstring(game:httpget("https://raw.githubusercontent.com/RBXROBLOXGAMER/scripts/main/BraznoEx"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RBXROBLOXGAMER/scripts/main/BraznoEx"))() 
+			
 			script:Destroy()
 			script.Parent.Load.TextColor3 = Color3.fromRGB(255, 0, 0) -- Красный для значений < 10
 		elseif rateNumber < 20 then
@@ -2255,7 +2126,7 @@ local function JHUR_fake_script() -- Frame.unc
 		elseif rateNumber < 30 then
 			adder()
 			script.Parent.Load.TextColor3 = Color3.fromRGB(255, 170, 0) -- Оранжевый для значений < 30
-		elseif rateNumber < 50 then
+		elseif rateNumber < 65 then
 			adder()
 			script.Parent.Load.TextColor3 = Color3.fromRGB(255, 255, 0) -- Желтый для значений < 50
 		elseif rateNumber < 100 then
@@ -3067,12 +2938,12 @@ local function JHUR_fake_script() -- Frame.unc
 		ws:Close()
 	end)
 end
-coroutine.wrap(JHUR_fake_script)()
-local function UMDK_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EFNGEE_fake_script)()
+local function NPDAH_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local TweenService = game:GetService("TweenService")
-	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RBXROBLOXGAMER/scripts/main/console"))() 
 	local function fadeIn(element)
 		element.Visible = true
 		local tweenInfo = TweenInfo.new(
@@ -3089,8 +2960,8 @@ local function UMDK_fake_script() -- Frame.LocalScript
 	fadeIn(frame)
 	
 end
-coroutine.wrap(UMDK_fake_script)()
-local function YHGG_fake_script() -- Frame.LocalScript 
+coroutine.wrap(NPDAH_fake_script)()
+local function TDACK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3139,8 +3010,8 @@ local function YHGG_fake_script() -- Frame.LocalScript
 	end)
 	
 end
-coroutine.wrap(YHGG_fake_script)()
-local function EAEIIRG_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(TDACK_fake_script)()
+local function YPSGNZ_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local TweenService = game:GetService("TweenService")
@@ -3164,8 +3035,8 @@ local function EAEIIRG_fake_script() -- ScrollingFrame.LocalScript
 	updateScrollingFrame()
 	
 end
-coroutine.wrap(EAEIIRG_fake_script)()
-local function WFNF_fake_script() -- Unc.LocalScript 
+coroutine.wrap(YPSGNZ_fake_script)()
+local function QIBPIP_fake_script() -- Unc.LocalScript 
 	local script = Instance.new('LocalScript', Unc)
 
 	local button = script.Parent
@@ -3174,183 +3045,4 @@ local function WFNF_fake_script() -- Unc.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua"))()
 	end)
 end
-coroutine.wrap(WFNF_fake_script)()
-local function DVKUKO_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	local button = script.Parent
-	local frame = script.Parent.Parent.Parent.Parent.Console
-	button.MouseButton1Click:Connect(function()
-		frame:Destroy()
-	end)
-end
-coroutine.wrap(DVKUKO_fake_script)()
-local function XTYJC_fake_script() -- Write_2.LocalScript 
-	local script = Instance.new('LocalScript', Write_2)
-
-	local TweenService = game:GetService("TweenService")
-	local LogService = game:GetService("LogService")
-	
-	local scriptParent = script.Parent
-	local textLabel = scriptParent.Parent.Write
-	local scrollingFrame = scriptParent.Parent.Parent.ScrollingFrame
-	
-	local currentHeight = 550
-	local animationInfo = TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
-	-- Функция для форматирования сообщений в консоли
-	local function formatMessage(message, messageType)
-		local formattedMessage = message
-		local textColor = Color3.new(1, 1, 1)
-	
-		if messageType == Enum.MessageType.MessageError then
-			formattedMessage = "> ⛔ " .. message
-			textColor = Color3.new(1, 0, 0)
-		elseif messageType == Enum.MessageType.MessageWarning then
-			formattedMessage = "> ⚠ " .. message
-			textColor = Color3.new(1, 1, 0)
-		elseif messageType == Enum.MessageType.MessageInfo then
-			formattedMessage = "> 🔵 " .. message
-			textColor = Color3.new(1, 1, 1)
-		elseif messageType == Enum.MessageType.MessageOutput then
-			formattedMessage = "> 📤 " .. message
-			textColor = Color3.new(1, 1, 1)
-		end
-	
-		return formattedMessage, textColor
-	end
-	
-	-- Функция для обновления текста в текстовом поле и анимации изменения размеров окна
-	-- Функция для обновления текста в текстовом поле и анимации изменения размеров окна
-	local function updateConsole()
-		local consoleText = LogService:GetLogHistory()
-		local formattedText = ""
-		local totalHeight = 0
-	
-		for _, value in ipairs(consoleText) do
-			if type(value) == "table" and value.message then
-				local formattedMessage, textColor = formatMessage(value.message, value.messageType)
-				formattedText = formattedText .. formattedMessage .. "\n"
-			elseif type(value) == "string" then
-				formattedText = formattedText .. tostring(value) .. "\n"
-			end
-		end
-	
-		-- Заменяем текущий текст на новый форматированный текст
-		textLabel.Text = formattedText
-	
-		-- Пересчитываем размеры и анимируем изменение окна и скроллинга
-		local textSizeY = textLabel.TextBounds.Y
-		local newHeight = math.max(textSizeY, 550) + 15
-	
-		local textTween = TweenService:Create(scriptParent, animationInfo, { Size = UDim2.new(0, 475, 0, newHeight) })
-		textTween:Play()
-	
-		local scrollingFrameTween = TweenService:Create(scrollingFrame, animationInfo, { CanvasSize = UDim2.new(0, 0, 0, newHeight) })
-		scrollingFrameTween:Play()
-	
-		-- Прокручиваем вверх при добавлении новых сообщений
-		scrollingFrame.CanvasPosition = Vector2.new(0, newHeight)
-	end
-	
-	-- Функция для очистки консоли
-	local function clearConsole()
-		LogService:ClearOutput()
-		updateConsole() -- Обновляем консоль после очистки
-	end
-	
-	-- Функция для автоматической очистки каждые 5 минут (300 секунд)
-	local function autoClearConsole()
-		clearConsole()
-		wait(300) -- Подождать 5 минут перед следующей очисткой
-		autoClearConsole() -- Рекурсивный вызов для повторения
-	end
-	
-	updateConsole()
-	
-	-- Подключаем обновление консоли к событию добавления нового сообщения
-	LogService.MessageOut:Connect(updateConsole)
-end
-coroutine.wrap(XTYJC_fake_script)()
-local function CQTBZW_fake_script() -- Console.LocalScript 
-	local script = Instance.new('LocalScript', Console)
-
-	local UserInputService = game:GetService("UserInputService")
-	local TweenService = game:GetService("TweenService")
-	local frame = script.Parent
-	frame.Parent.Enabled = true
-	local dragging = false
-	local dragInput, mousePos, framePos
-	
-	local function update(input)
-		local delta = input.Position - mousePos
-		local newPosition = UDim2.new(
-			framePos.X.Scale,
-			framePos.X.Offset + delta.X,
-			framePos.Y.Scale,
-			framePos.Y.Offset + delta.Y
-		)
-	
-		TweenService:Create(frame, TweenInfo.new(0.2), {Position = newPosition}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = true
-			mousePos = input.Position
-			framePos = frame.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	frame.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-	
-end
-coroutine.wrap(CQTBZW_fake_script)()
-local function SGMJ_fake_script() -- Console.LocalScript 
-	local script = Instance.new('LocalScript', Console)
-
-	local TweenService = game:GetService("TweenService")
-	
-	local function fadeIn(element)
-		element.Visible = true
-		local tweenInfo = TweenInfo.new(
-			3, -- Время анимации
-			Enum.EasingStyle.Quint, -- Стиль анимации
-			Enum.EasingDirection.Out -- Направление анимации
-		)
-		local tween = TweenService:Create(element, tweenInfo, {Transparency = 0.3})
-		tween:Play()
-	end
-	
-	local frame = script.Parent.Parent.Console
-	frame.Transparency = 1
-	fadeIn(frame)
-	
-end
-coroutine.wrap(SGMJ_fake_script)()
-local function ATMOKNB_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.LogService:ClearOutput()
-		script.Parent.Parent.ScrollingFrame.Write.Text = ''
-	end)
-	
-end
-coroutine.wrap(ATMOKNB_fake_script)()
+coroutine.wrap(QIBPIP_fake_script)()
