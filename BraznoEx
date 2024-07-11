@@ -181,7 +181,7 @@ Load.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Load.BorderSizePixel = 0
 Load.Position = UDim2.new(0.856804907, 0, 0.737642586, 0)
 Load.Size = UDim2.new(0, 67, 0, 30)
-Load.Font = Enum.Font.Unknown
+Load.Font = Enum.Font.FredokaOne
 Load.Text = "Load"
 Load.TextColor3 = Color3.fromRGB(255, 255, 255)
 Load.TextSize = 17.000
@@ -194,7 +194,7 @@ Load1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Load1.BorderSizePixel = 0
 Load1.Position = UDim2.new(0.860289276, 0, 0.825095177, 0)
 Load1.Size = UDim2.new(0, 62, 0, 29)
-Load1.Font = Enum.Font.Unknown
+Load1.Font = Enum.Font.FredokaOne
 Load1.Text = "Load"
 Load1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Load1.TextSize = 17.000
@@ -2964,50 +2964,9 @@ coroutine.wrap(NPDAH_fake_script)()
 local function TDACK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	local UserInputService = game:GetService("UserInputService")
-	local TweenService = game:GetService("TweenService")
+	
 	local frame = script.Parent
-	frame.Parent.Enabled = true
-	local dragging = false
-	local dragInput, mousePos, framePos
-	
-	local function update(input)
-		local delta = input.Position - mousePos
-		local newPosition = UDim2.new(
-			framePos.X.Scale,
-			framePos.X.Offset + delta.X,
-			framePos.Y.Scale,
-			framePos.Y.Offset + delta.Y
-		)
-	
-		TweenService:Create(frame, TweenInfo.new(0.4), {Position = newPosition}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = true
-			mousePos = input.Position
-			framePos = frame.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	frame.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
+	Frame.Draggable = true
 	
 end
 coroutine.wrap(TDACK_fake_script)()
