@@ -6,6 +6,7 @@
           "description": "Executes code after player is teleported.",
           "insert": "queue_on_teleport"
       },
+    
       "setsimulationradius": {
           "label": "setsimulationradius(min,max);",
           "type": "Method",
@@ -29,6 +30,12 @@
           "type": "Method",
           "description": "Gets the script that is calling this function.",
           "insert": "getcallingscript"
+      },
+      "fireproximityprompt": {
+          "label": "fireproximityprompt(ProximityPrompt);",
+          "type": "Method",
+          "description": "Fakes a .Proximy event to ToTouch with part.",
+          "insert": "fireproximityprompt"
       },
       "firetouchinterest": {
           "label": "firetouchinterest(Part, ToTouch, Toggle);",
