@@ -6,11 +6,10 @@
           "description": "Executes code after player is teleported.",
           "insert": "queue_on_teleport"
       },
-    
       "setsimulationradius": {
           "label": "setsimulationradius(min,max);",
           "type": "Method",
-          "description": "Sets the players simulation radius",
+          "description": "Sets the players simulation radius.",
           "insert": "setsimulationradius"
       },
       "gethwid": {
@@ -25,22 +24,22 @@
           "description": "Returns a list of all instances within the game.",
           "insert": "getinstances"
       },
-      "getcallingscript": {
+      "checkcaller": {
           "label": "checkcaller();",
           "type": "Method",
           "description": "Gets the script that is calling this function.",
-          "insert": "getcallingscript"
+          "insert": "checkcaller"
       },
       "fireproximityprompt": {
           "label": "fireproximityprompt(ProximityPrompt);",
           "type": "Method",
-          "description": "Fakes a .Proximy event to ToTouch with part.",
+          "description": "Fakes a .ProximityPrompt event to interact with a part.",
           "insert": "fireproximityprompt"
       },
       "firetouchinterest": {
           "label": "firetouchinterest(Part, ToTouch, Toggle);",
           "type": "Method",
-          "description": "Fakes a .Touched event to ToTouch with Part.\nThe Toggle argument must be either 0 or 1 (for fire/un-fire).",
+          "description": "Fakes a .Touched event to interact with a part.\nThe Toggle argument must be either 0 or 1 (for fire/un-fire).",
           "insert": "firetouchinterest"
       },
       "getrenv": {
@@ -52,163 +51,163 @@
       "newcclosure": {
           "label": "newcclosure(lclosure);",
           "type": "Method",
-          "description": "Takes an lclosure (Lua function) and returns a new cclosure (C function).\nThis is commonly used when setting the metamethods of a Roblox userdata such as game.",
+          "description": "Takes a Lua function (lclosure) and returns a new C function (cclosure).",
           "insert": "newcclosure"
       },
       "request": {
           "label": "request(options);",
           "type": "Method",
-          "description": "Sends a http request with parameters in options.",
+          "description": "Sends an HTTP request with specified options.",
           "insert": "request"
       },
       "readfile": {
           "label": "readfile(file);",
           "type": "Method",
-          "description": "Returns the content of the file. ",
+          "description": "Returns the content of a file.",
           "insert": "readfile"
       },
       "loadstring": {
           "label": "loadstring(chunk, chunk_name);",
           "type": "Method",
-          "description": "Loads chunk as a Lua function with optional chunk_name and returns it if compilation is successful.\nOtherwise, if an error has occurred during compilation, nil followed by the error message will be returned.",
+          "description": "Loads a chunk of code as a Lua function.",
           "insert": "loadstring"
       },
       "mousescroll": {
           "label": "mousescroll(px);",
           "type": "Method",
-          "description": "Scrolls the mouse wheel virtually by px pixels.",
+          "description": "Simulates scrolling the mouse wheel by pixels.",
           "insert": "mousescroll"
       },
       "listfiles": {
           "label": "listfiles(folder);",
           "type": "Method",
-          "description": "Returns a table of files in folder.",
+          "description": "Returns a table of files in a specified folder.",
           "insert": "listfiles"
       },
       "keyrelease": {
           "label": "keyrelease();",
           "type": "Method",
-          "description": "Releases key on the keyboard. You can access the key values from the link below.\n https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes",
+          "description": "Releases a key on the keyboard.",
           "insert": "keyrelease"
       },
       "mouse1release": {
           "label": "mouse1release();",
           "type": "Method",
-          "description": "Simulates the left mouse button being released. Commonly used after calling mouse1press().",
+          "description": "Simulates releasing the left mouse button.",
           "insert": "mouse1release"
       },
       "getnilinstances": {
           "label": "getnilinstances();",
           "type": "Method",
-          "description": "Returns all the nil instances in the game.",
+          "description": "Returns all nil instances in the game.",
           "insert": "getnilinstances"
       },
       "islclosure": {
           "label": "islclosure(f);",
           "type": "Method",
-          "description": "Returns true if f is an LClosure. Otherwise returns false.",
+          "description": "Checks if a function is a Lua closure.",
           "insert": "islclosure"
       },
       "mouse1click": {
           "label": "mouse1click();",
           "type": "Method",
-          "description": "Simulates the left mouse button being clicked one time.",
+          "description": "Simulates clicking the left mouse button once.",
           "insert": "mouse1click"
       },
       "mouse2press": {
           "label": "mouse2press();",
           "type": "Method",
-          "description": "Clicks down on the right mouse button.",
+          "description": "Simulates pressing the right mouse button.",
           "insert": "mouse2press"
       },
       "saveinstance": {
           "label": "saveinstance();",
           "type": "Method",
-          "description": "Saves the game as a roblox studio file, can be found in the workspace folder.",
+          "description": "Saves the game as a Roblox Studio file.",
           "insert": "saveinstance"
       },
       "getgenv": {
           "label": "getgenv();",
           "type": "Method",
-          "description": "Returns the environment that will be applied to each script ran by Solara.",
+          "description": "Returns the environment applied to each script run by Solara.",
           "insert": "getgenv"
       },
       "mousemoverel": {
           "label": "mousemoverel(x, y);",
           "type": "Method",
-          "description": "Moves the mouse by x and y relative to the mouse’s current position.\nKeep in mind that a positive y value moves the mouse down.",
+          "description": "Moves the mouse relative to its current position.",
           "insert": "mousemoverel"
       },
       "iscclosure": {
           "label": "iscclosure(closure);",
           "type": "Method",
-          "description": "Returns a boolean that tells you if closure is a C closure (true) or a Lua closure (false)",
+          "description": "Checks if a function is a C closure.",
           "insert": "iscclosure"
       },
       "keypress": {
           "label": "keypress(keycode);",
           "type": "Method",
-          "description": "Continuously presses the key indicated by keycode until keyrelease is called with the same keycode.",
+          "description": "Continuously presses a key until released.",
           "insert": "keypress"
       },
       "setfpscap": {
           "label": "setfpscap();",
           "type": "Method",
-          "description": "Sets roblox's fps cap.",
+          "description": "Sets Roblox's FPS cap.",
           "insert": "setfpscap"
       },
       "mouse1press": {
           "label": "mouse1press();",
           "type": "Method",
-          "description": "Simulates a left mouse button press without releasing it.",
+          "description": "Simulates pressing the left mouse button.",
           "insert": "mouse1press"
       },
       "isrbxactive": {
           "label": "isrbxactive();",
           "type": "Method",
-          "description": "Returns true if roblox is focused, otherwise returns false.",
+          "description": "Checks if Roblox is focused.",
           "insert": "isrbxactive"
       },
       "getconnections": {
           "label": "getconnections(event);",
           "type": "Method",
-          "description": "Returns the functions connected to event as a table.\nEach entry in the returned table is a table with Enable and Disable methods.\nYou can call those methods to enable/disable connections.",
+          "description": "Returns functions connected to an event.",
           "insert": "getconnections"
       },
       "fireclickdetector": {
           "label": "fireclickdetector(d);",
           "type": "Method",
-          "description": "Simulates a click on ClickDetector d.",
+          "description": "Simulates clicking a ClickDetector.",
           "insert": "fireclickdetector"
       },
       "mouse2release": {
           "label": "mouse2release();",
           "type": "Method",
-          "description": "Simulates the right mouse button being released. This is commonly used after calling mouse2press().",
+          "description": "Simulates releasing the right mouse button.",
           "insert": "mouse2release"
       },
       "getrawmetatable": {
           "label": "getrawmetatable(t);",
           "type": "Method",
-          "description": "Gets the metatable of table or userdata t and returns it without invoking __metatable and sets the readonly value of the metatable to false.",
+          "description": "Gets the metatable of a table or userdata.",
           "insert": "getrawmetatable"
       },
       "isreadonly": {
           "label": "isreadonly(t);",
           "type": "Method",
-          "description": "Returns t's read-only condition.",
+          "description": "Checks if a table is read-only.",
           "insert": "isreadonly"
       },
       "mouse2click": {
           "label": "mouse2click();",
           "type": "Method",
-          "description": "Simulates the right mouse button being clicked one time.",
+          "description": "Simulates clicking the right mouse button once.",
           "insert": "mouse2click"
       },
       "writefile": {
           "label": "writefile(filename, data);",
           "type": "Method",
-          "description": "Writes data to a file called filename in the workspace folder.\n If the file already exists, the file is overwritten. This function is restricted to the workspace folder.",
+          "description": "Writes data to a file in the workspace folder.",
           "insert": "writefile"
       },
       "setclipboard": {
@@ -219,40 +218,34 @@
       }
   },
   "debug_library": {
-      "debug": {
-          "label": "debug",
-          "type": "Class",
-          "description": "Debug Library",
-          "insert": "debug"
-      },
       "debug.getmetatable": {
           "label": "debug.getmetatable(val);",
           "type": "Method",
-          "description": "Retrieve the metatable of value irregardless of value's metatable's __metatable field. Returns nil if it doesn't exist.",
+          "description": "Retrieves the metatable of a value regardless of __metatable field.",
           "insert": "debug.getmetatable"
       },
       "debug.profileend": {
           "label": "debug.profileend();",
           "type": "Method",
-          "description": "Stops a profile created with debug.profilebegin.",
+          "description": "Stops a profiler started with debug.profilebegin.",
           "insert": "debug.profileend"
       },
       "debug.profilebegin": {
           "label": "debug.profilebegin(label);",
           "type": "Method",
-          "description": "Starts a profiler under the label label.",
+          "description": "Starts a profiler under a specified label.",
           "insert": "debug.profilebegin"
       },
       "debug.traceback": {
           "label": "debug.traceback(message, level);",
           "type": "Method",
-          "description": "Returns a string with a traceback of the call stack at level (stack level 1 if not provided).\nYou can also include a message to append to the start of the traceback with the message argument.",
+          "description": "Returns a string with a traceback of the call stack.",
           "insert": "debug.traceback"
       },
       "debug.getinfo": {
           "label": "debug.getinfo(f);",
           "type": "Method",
-          "description": "Returns a table containing the following information about the function:\n + source - The name of the script the function was defined in\n+ what - Where the function originates from (Lua or C/C++)\n+ func - The passed in function\n+ short_src - The name of the script in a format that can be used in error messages\n+ name - The name of the function\n+ nups - The number of upvalues in the function\nAlthough more information is given, that information is pointless since it has the same values for every function.",
+          "description": "Returns information about a function.",
           "insert": "debug.getinfo"
       }
   },
@@ -260,7 +253,7 @@
       "Drawing.new": {
           "label": "Drawing.new(type);",
           "type": "Method",
-          "description": "Creates a new drawing object with type. Returns the object.",
+          "description": "Creates a new drawing object of a specified type.",
           "insert": "Drawing.new"
       } 
   }
